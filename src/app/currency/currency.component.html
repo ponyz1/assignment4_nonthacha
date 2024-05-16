@@ -1,0 +1,17 @@
+<!-- <p>currency works!</p> -->
+<!-- <pre>{{service | json}}</pre> -->
+<!-- <pre>{{service | async | json}}</pre> -->
+<div >
+    <div *ngIf="time" class="time-container">
+        <p class="greeting">Welcome to Bitcoin Currency Tracker!</p>
+        <p class="update-time">Last Updated: {{time["updated"]}}</p>
+    </div>
+
+<!-- <p></p> -->
+    <div *ngFor="let currencyKey of getObjectKeys(currencies)" class="box">
+        <p><a [routerLink]="['/data',currencyKey]">{{ currencyKey }}</a></p>
+    
+    <!-- <p>{{ currencies[currencyKey].rate }}</p>
+    <p>{{ currencies[currencyKey].description }}</p> -->
+    </div>
+</div>

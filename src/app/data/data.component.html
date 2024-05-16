@@ -1,0 +1,7 @@
+<!-- <p>data works!</p> -->
+<div *ngIf="data" class="box">
+    <button (click)="close()" class="close-button">x</button>
+    <p class="code">{{ data.code }}</p>
+    <p class="rate">{{ data.rate }} <span [innerHTML]="data.symbol"></span></p>
+    <p class="description">{{ data.description }}</p>
+</div>
